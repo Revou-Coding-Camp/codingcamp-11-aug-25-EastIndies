@@ -4,42 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Mini Project</title>
+
     <!-- Add your CSS files here -->
     <link rel="stylesheet" href="CSS\Style.css">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <!--JS External-->
-    <script src="JS\script.js"></script>
 
     <!--Main header-->
-    <header class="flex items-center justify-between p-4 bg-blue-500 text-white">
-        <h1>Welcome to Your Website</h1>
-
-        <nav class="bg-gray-200 p-4">
-        <ul class="class=">
-            <li><a href="#home" class="hover:text-blue-200">Home</a></li>
-                <li><a href="#our_profile" class="hover:text-blue-200">Our Profile</a></li>
-                <li><a href="#portofolio" class="hover:text-blue-200">Portofolio</a></li>
-                <li><a href="#message_us" class="hover:text-blue-200">Message Us</a></li>
+    <header class="flex items-center justify-between p-[16px]">
+        <!--LOgo-->
+        <div class="bg-blue-500 rounded-full h-[75px] w-[75px] main-logo"></div>
+        
+        <nav>
+            <ul class="flex gap-[8px]">
+                <li><a href="#home-page" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Home</a></li>
+                <li><a href="#our-profile" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Our Profile</a></li>
+                <li><a href="#portfolio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Portfolio</a></li>
+                <li><a href="#message-us" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Message Us</a></li>
+            </ul>
         </nav>
     </header>
+
+    <hr />
     
     <!--Main Content-->
     <main>
-        <section>
-            <div class="flex items-center justify-center h-full">
-                <h1 class="text-4xl font-bold text-gray-800">Welcome to Your Page</h1>
+        <!--home-->
+        <section id="home-page" class="h-[400px] bg-gray-100">
+            <div class="flex justify-center items-center h-[400px]">
+                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting">User</span> to Our Coding Mini Project</h1>
+            </div>
+        </section> 
+            
+
+        <hr />
+
+        <!--our profile-->
+        <section id="our-profile" class=" text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-3xl font-semibold text-gray-600">Our Profile</h1>
+            </header>
+                <p class=" text-gray-600">We are a passionate team of beginners stepping into the world of coding, eager to learn and grow together.</p>
+
         </section>
+
+        <hr />
+        
+        <!--portfolio-->
+        <section id="portfolio" class=" text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-3xl font-semibold text-gray-600">Portofolio</h1>
+            </header>
+                <p class=" text-gray-600">We are a passionate team of beginners stepping into the world of coding, eager to learn and grow together.</p>
+
+        </section>
+
+        <hr />
+        
+        <!--message us-->
+        <section id="message-us" class=" text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-3xl font-semibold text-gray-600">message us</h1>
+            </header>
+
+            <form>
+                <div class="flex flex-col items-center gap-[16px]">
+                    <input type="text" placeholder="Your Name" class="border p-[8px] rounded-[8px] w-[300px]">
+                    <input type="email" placeholder="Your Email" class="border p-[8px] rounded-[8px] w-[300px]">
+                    <textarea placeholder="Your Message" class="border p-[8px] rounded-[8px] w-[300px]" rows="4"></textarea>
+                    <button type="button" onclick="sendmessage();" class="bg-blue-500 text-white py-[8px] px-[16px] rounded-[8px] hover:bg-blue-600">Send Message</button>
+                </div>
+            </form>
+
+        </section>
+    
     </main>
 
     <!--Footer-->
-    <footer>
-        <span> $copy</span>
+    <footer class="flex items-center justify-center h-[100px] bg-gray-200">
+        <span>&copy;coding mini project 2025</span>
     </footer>
     <!-- Add your JS files here -->
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
